@@ -1,3 +1,51 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fuentes/icomoon.eot?qjpfhw');
+	src:url('fuentes/icomoon.eot?#iefixqjpfhw') format('embedded-opentype'),
+		url('fuentes/icomoon.woff?qjpfhw') format('woff'),
+		url('fuentes/icomoon.ttf?qjpfhw') format('truetype'),
+		url('fuentes/icomoon.svg?qjpfhw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star-half:before {
+	content: "\e9d8";
+	color:rgb(252, 252, 13);
+	margin-right: 0.4em;
+}
+.icon-circle-up:before {
+	content: "\ea41";
+	color:rgb(73, 218, 75);
+	margin-right: 0.8em;
+}
+.icon-circle-down:before {
+	content: "\ea43";
+	color:rgb(255, 87, 0);
+	margin-left: 0.8em;
+}
+.icon-pen:before {
+	content: "\e600";
+	margin-right: 0.8em
+}
+.icon-fire:before {
+	content: "\e601";
+}
+
 a
 {
 color: #22bce0;
@@ -6,7 +54,7 @@ color: #22bce0;
 body
 {
 background: #EEEEEE;
-font-family: "Open Sans";
+font-family: "Open sans";
 font-size: 16px;
 }
 footer
@@ -74,7 +122,7 @@ top: 0;
 }
 nav 
 {
-background: #80BCA3;
+background: #2A7138;
 box-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
 padding: 0 0.5em;
 position: relative;
@@ -83,7 +131,7 @@ nav ul
 {
 list-style: none;
 margin: 0;
-padding: 0;
+padding: 0.5em;
 }
 nav ul #publicar_nav
 {
@@ -111,7 +159,8 @@ nav ul li a
 {
 color: white;
 display: block;
-padding: 0.5em 0;
+padding: 0.1em 4em 0.1em 0.1em; /*0.5em 0*/
+margin-bottom: 0.2em;
 }
 
 #contenido
@@ -181,6 +230,11 @@ position: absolute;
 top: 100%;
 width: 90%
 }
+#contenido .item .votacion  a
+{
+text-decoration: none;
+}
+
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
 {
